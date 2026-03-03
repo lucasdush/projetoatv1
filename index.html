@@ -1,36 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home - Atividade 1</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Tech - Home</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo à Loja!</h1>
-        <h3>Projeto de atividade web </h3>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="compras.html">Compras</a>
-            <a href="servicos.html">Serviços</a>
-            <a href="equipe.html">Equipe</a>
-        </nav>
-    </header>
+<header>
+    <h1>Loja Tech</h1>
+    <p>Tecnologia com os melhores preços</p>
 
-    <main>
-        <section>
-            <h2>Sobre nosso site</h2>
-            <p>Este site foi desenvolvido para atividade prática de web.</p>
+    <nav>
+        <a href="index.html" class="ativo">Home</a>
+        <a href="compras.html">Produtos</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="equipe.html">Equipe</a>
+    </nav>
+</header>
 
-            <h2>Destaques</h2>
-            <ul>
-                <li>Página de Compras com produtos</li>
-                <li>Página de Serviços detalhados</li>
-                <li>Página de Contato simples e funcional</li>
-            </ul>
-        </section>
-    </main>
+<main>
+
+    <!-- Banner Principal -->
+    <section class="banner">
+        <h2>Super Promoção</h2>
+        <p>Até 40% OFF em produtos selecionados!</p>
+        <a href="compras.html" class="btn-banner">Ver Ofertas</a>
+    </section>
+
+    <!-- Seção Produtos -->
+    <section>
+        <h2 class="titulo-secao">Produtos em Destaque</h2>
+
+        <div class="produtos">
+
+            <div class="card">
+                
+                <h3>Notebook Gamer</h3>
+                <p class="preco">R$ 4.500,00</p>
+                <a href="compras.html">
+                    <button>Comprar</button>
+                </a>
+            </div>
+
+            <div class="card">
+                
+                <h3>Smartphone</h3>
+                <p class="preco">R$ 2.199,00</p>
+                <a href="compras.html">
+                    <button>Comprar</button>
+                </a>
+            </div>
+
+            <div class="card">
+                
+                <h3>Fone Bluetooth</h3>
+                <p class="preco">R$ 299,00</p>
+                <a href="compras.html">
+                    <button>Comprar</button>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Loja Tech - Todos os direitos reservados</p>
+</footer>
+
 </body>
 </html>
