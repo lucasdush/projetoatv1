@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Fila</title>
+<link rel="stylesheet" href="./css/style.css">
+<script src="https://unpkg.com/dexie/dist/dexie.js"></script>
+<script src="script.js"></script>
+</head>
+<body>
+
+<header><h1>Fila de Chamados (Em Aberto)</h1></header>
+
+<nav>
+<a href="index.html">Início</a>
+<a href="cliente.html">Abrir Chamado</a>
+<a href="fila.html">Fila</a>
+<a href="lista.html">Encerrados</a>
+</nav>
+
+<div class="container">
+
+<table>
+<tr>
+<th>Número</th>
+<th>Solicitante</th>
+<th>Telefone</th>
+<th>Cliente (CNPJ/CPF)</th>
+<th>Tipo</th>
+<th>Prioridade</th>
+<th>Status</th>
+<th>Ação</th>
+</tr>
+
+<tbody id="tabela"></tbody>
+
+</table>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Abrir Chamado</title>
+<link rel="stylesheet" href="./css/style.css">
+<script src="https://unpkg.com/dexie/dist/dexie.js"></script>
+<script src="script.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>Abertura de Chamado</h1>
+</header>
+
+<div class="container">
+
+<form onsubmit="gerarChamado(event)">
+
+<label>Nome do Solicitante</label>
+<input type="text" id="nome" required>
+
+<label>Telefone</label>
+<input type="tel" id="telefone" required>
+
+<label>CNPJ / CPF</label>
+<input type="text" id="cliente" required>
+
+<label>Tipo</label>
+
+<select id="tipo">
+<option>Suporte</option>
+<option>Infraestrutura</option>
+</select>
+
+<label>Problema</label>
+
+<select id="problema" onchange="definirPrioridade()">
+<option value="3">Software não inicializa</option>
+<option value="2">Função não funciona</option>
+<option value="1">Aplicação lenta</option>
+<option value="1">Dúvida sobre funcionalidade</option>
+</select>
+
+<label>Prioridade</label>
+<input type="text" id="prioridade" readonly>
+
+<label>Descrição</label>
+<textarea id="descricao"></textarea>
+
+<button type="submit">Abrir Chamado</button>
+
+<div id="resultado"></div>
+
+</form>
+
+</div>
+
+</body>
+</html>
